@@ -7,6 +7,6 @@ docker pull asherzion/simple-python-app
 # Run the Docker image as a container
 docker run -d -p 5000:5000 asherzion/simple-python-app
 
-# Started container 
+# Started container on ec2
 containerid=`docker ps | awk -F " " '{print $1}'`
 echo "started container $containerid"
